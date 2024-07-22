@@ -3,7 +3,7 @@ const app = express();
 const port = 80; 
 
 app.get('/sayHello', (req, res) => {
-  res.json({ message: 'Hello User' });
+  res.json({ message: 'Hello User 2024-07-22 23:14:00 ' });
 });
 
 app.listen(port, () => {
@@ -11,6 +11,3 @@ app.listen(port, () => {
 });
 
 ///home/azureuser/simple-api/app.js
-
-// testing workflow with github actions
-
