@@ -36,5 +36,7 @@ jobs:
             cd /home/azureuser/simple-api
             git pull origin master
             npm install
-            pm2 restart all || pm2 start app.js
+            npm install -g pm2
+            pm2 start app.js
+            
           EOF
