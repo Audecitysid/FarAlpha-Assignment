@@ -36,6 +36,6 @@ jobs:
             cd /home/azureuser/simple-api
             git pull origin master
             npm install
-            node app.js
+            sudo node app.js
             
           EOF
