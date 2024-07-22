@@ -34,7 +34,7 @@ jobs:
           ssh-keyscan $VM_HOST >> ~/.ssh/known_hosts
           ssh -o StrictHostKeyChecking=no $VM_USER@$VM_HOST << 'EOF'
             cd home/azureuser/simple-api/
-            git pull origin main
+            git pull origin master
             npm install
             node app.js &
           EOF
