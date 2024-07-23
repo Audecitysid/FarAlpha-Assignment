@@ -12,4 +12,4 @@ app.listen(port, () => {
 
 ///home/azureuser/simple-api/app.js
 
-//testing the server 2024-07-22 23:35:24
+
