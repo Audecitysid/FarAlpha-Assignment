@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-                ssh-key: ${{ secrets.OPENSSH_KEY }}
+                ssh-key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -41,3 +41,4 @@ jobs:
             sudo npx pm2 stop simple-api || true
             sudo npx pm2 start app.js --name simple-api --watch           
           EOF
+          
