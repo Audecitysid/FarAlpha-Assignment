@@ -37,7 +37,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan $VM_HOST >> ~/.ssh/known_hosts
           ssh -o StrictHostKeyChecking=no $VM_USER@$VM_HOST << 'EOF'
-            cd /home/azureuser/simple-api
+            cd /home/ubuntu/simple-api
             git pull origin master
             npm install
             sudo npx pm2 stop simple-api || true
